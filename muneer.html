@@ -23,14 +23,12 @@
             --radius-md: 12px;
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
         }
-
         body {
             background-color: var(--bg-main);
             color: var(--text-main);
@@ -41,23 +39,19 @@
             background-attachment: fixed;
             overflow-x: hidden;
         }
-
         .page {
             display: none;
             min-height: 100vh;
             animation: fadeIn 0.4s ease-in-out forwards;
         }
-
         .page.active {
             display: flex;
             flex-direction: column;
         }
-
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(12px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
         .hero-container {
             flex: 1;
             display: flex;
@@ -65,7 +59,6 @@
             justify-content: center;
             padding: 15px;
         }
-
         .hero-card {
             background: var(--bg-card);
             backdrop-filter: blur(16px);
@@ -78,7 +71,6 @@
             text-align: center;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
-
         .hero-icon {
             font-size: 3rem;
             background: linear-gradient(135deg, var(--secondary), var(--primary));
@@ -86,7 +78,6 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 15px;
         }
-
         .school-badge {
             display: inline-block;
             background: rgba(6, 182, 212, 0.1);
@@ -98,21 +89,18 @@
             font-weight: 600;
             margin-bottom: 15px;
         }
-
         .hero-card h1 {
             font-size: 1.8rem;
             font-weight: 800;
             margin-bottom: 12px;
             letter-spacing: -0.5px;
         }
-
         .hero-card p {
             color: var(--text-muted);
             font-size: 0.95rem;
             margin-bottom: 20px;
             line-height: 1.7;
         }
-
         .school-info-box {
             display: flex;
             justify-content: center;
@@ -120,7 +108,6 @@
             flex-wrap: wrap;
             margin-bottom: 25px;
         }
-
         .info-pill {
             background: rgba(15, 23, 42, 0.5);
             border: 1px solid var(--border-glass);
@@ -129,12 +116,10 @@
             font-size: 0.85rem;
             color: var(--text-muted);
         }
-
         .info-pill span {
             color: var(--secondary);
             font-weight: bold;
         }
-
         .hero-buttons {
             display: flex;
             gap: 12px;
@@ -142,7 +127,6 @@
             flex-wrap: wrap;
             margin-bottom: 25px;
         }
-
         .developer-credit {
             font-size: 0.8rem;
             color: var(--text-muted);
@@ -153,12 +137,10 @@
             justify-content: center;
             gap: 6px;
         }
-
         .developer-credit span {
             color: var(--accent);
             font-weight: bold;
         }
-
         .btn {
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
@@ -177,54 +159,45 @@
             text-decoration: none;
             width: 100%;
         }
-
         @media (min-width: 640px) {
             .btn { width: auto; }
             .hero-card { padding: 45px 40px; }
             .hero-card h1 { font-size: 2.3rem; }
         }
-
         .btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(79, 70, 229, 0.6);
         }
-
         .btn-outline {
             background: transparent;
             border: 2px solid var(--border-glass);
             box-shadow: none;
         }
-
         .btn-outline:hover {
             background: rgba(255, 255, 255, 0.05);
             border-color: var(--text-main);
             box-shadow: none;
         }
-
         .btn-danger {
             background: linear-gradient(135deg, #ef4444, #dc2626);
             box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4);
         }
         .btn-danger:hover { box-shadow: 0 8px 25px rgba(239, 68, 68, 0.6); }
-
         .btn-warning {
             background: linear-gradient(135deg, #f59e0b, #d97706);
             box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
         }
         .btn-warning:hover { box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6); }
-
         .btn-success {
             background: linear-gradient(135deg, #10b981, #059669);
             box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
         }
         .btn-success:hover { box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6); }
-
         .btn-sm {
             padding: 8px 14px;
             font-size: 0.85rem;
             border-radius: 8px;
         }
-
         .login-wrapper {
             flex: 1;
             display: flex;
@@ -232,7 +205,6 @@
             justify-content: center;
             padding: 15px;
         }
-
         .login-card {
             background: var(--bg-card);
             backdrop-filter: blur(16px);
@@ -243,16 +215,13 @@
             padding: 25px 20px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
-
         @media (min-width: 640px) {
             .login-card { padding: 40px; }
         }
-
         .input-group {
             position: relative;
             margin-bottom: 18px;
         }
-
         .input-group i {
             position: absolute;
             right: 16px;
@@ -260,7 +229,6 @@
             transform: translateY(-50%);
             color: var(--text-muted);
         }
-
         .input-field, textarea.input-field, select.input-field, input[type="date"].input-field, input[type="month"].input-field {
             width: 100%;
             padding: 12px 16px 12px 42px;
@@ -272,16 +240,13 @@
             outline: none;
             transition: var(--transition);
         }
-
         textarea.input-field { padding-left: 16px; }
         select.input-field { padding-left: 16px; }
         input[type="date"].input-field, input[type="month"].input-field { padding-left: 16px; color-scheme: dark; }
-
         .input-field:focus {
             border-color: var(--primary);
             box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
         }
-
         .container {
             max-width: 1200px;
             margin: 15px auto;
@@ -293,11 +258,9 @@
             padding: 20px 15px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
         }
-
         @media (min-width: 640px) {
             .container { margin: 30px auto; padding: 35px; }
         }
-
         h2 {
             font-size: 1.4rem;
             font-weight: 700;
@@ -309,11 +272,9 @@
             padding-bottom: 12px;
             flex-wrap: wrap;
         }
-
         @media (min-width: 640px) {
             h2 { font-size: 1.8rem; }
         }
-
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -326,7 +287,6 @@
             font-size: 0.9rem;
         }
         .back-link:hover { color: var(--text-main); }
-
         .admin-section {
             background: rgba(15, 23, 42, 0.4);
             border: 1px solid var(--border-glass);
@@ -334,11 +294,9 @@
             padding: 15px;
             margin-bottom: 20px;
         }
-
         @media (min-width: 640px) {
             .admin-section { padding: 25px; margin-bottom: 25px; }
         }
-
         .admin-section h3 {
             font-size: 1.1rem;
             margin-bottom: 15px;
@@ -348,11 +306,9 @@
             color: var(--secondary);
             flex-wrap: wrap;
         }
-
         @media (min-width: 640px) {
             .admin-section h3 { font-size: 1.2rem; }
         }
-
         .filters {
             display: grid;
             grid-template-columns: 1fr;
@@ -363,11 +319,9 @@
             border-radius: var(--radius-md);
             border: 1px solid var(--border-glass);
         }
-
         @media (min-width: 768px) {
             .filters { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); padding: 20px; }
         }
-
         .filters label {
             display: block;
             margin-bottom: 6px;
@@ -375,7 +329,6 @@
             color: var(--text-muted);
             font-weight: 600;
         }
-
         .table-responsive {
             width: 100%;
             overflow-x: auto;
@@ -384,34 +337,28 @@
             border: 1px solid var(--border-glass);
             margin-top: 12px;
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
             text-align: center;
             white-space: nowrap;
         }
-
         th, td {
             padding: 12px 14px;
             font-size: 0.9rem;
         }
-
         th {
             background-color: rgba(15, 23, 42, 0.9);
             color: var(--secondary);
             font-weight: 700;
             border-bottom: 1px solid var(--border-glass);
         }
-
         tr:not(:last-child) td {
             border-bottom: 1px solid var(--border-glass);
         }
-
         tr:hover {
             background: rgba(255, 255, 255, 0.02);
         }
-
         .status-select {
             padding: 6px 10px;
             background: rgba(15, 23, 42, 0.8);
@@ -422,13 +369,10 @@
             outline: none;
             font-size: 0.85rem;
         }
-
-        /* حاوية قائمة البحث الذكي للمعلمين */
         .autocomplete-container {
             position: relative;
             width: 100%;
         }
-
         .autocomplete-dropdown {
             position: absolute;
             top: 100%;
@@ -443,7 +387,6 @@
             display: none;
             box-shadow: 0 10px 25px rgba(0,0,0,0.5);
         }
-
         .autocomplete-item {
             padding: 10px 14px;
             cursor: pointer;
@@ -453,26 +396,77 @@
             border-bottom: 1px solid rgba(255,255,255,0.05);
             transition: background 0.2s;
         }
-
         .autocomplete-item:hover {
             background: rgba(79, 70, 229, 0.3);
             color: var(--secondary);
         }
-
+        .student-report-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-md);
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        .student-report-header {
+            background: rgba(30, 41, 59, 0.9);
+            padding: 12px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-glass);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .student-report-header .student-title {
+            font-size: 1.05rem;
+            font-weight: bold;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .student-report-header .student-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            background: rgba(15, 23, 42, 0.8);
+            padding: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid var(--border-glass);
+        }
+        .student-report-body {
+            padding: 0;
+            overflow-x: auto;
+        }
+        .student-report-body table {
+            margin: 0;
+        }
+        .student-report-body th {
+            background: rgba(15, 23, 42, 0.5);
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            padding: 8px 12px;
+        }
+        .student-report-body td {
+            font-size: 0.85rem;
+            padding: 10px 12px;
+        }
         @media print {
             body { background: white; color: black; }
             .page, .container { background: white; box-shadow: none; border: none; width: 100%; margin: 0; padding: 0; }
             .hero-container, .login-wrapper, .admin-section:not(#monthly-report-box), .back-link, .btn { display: none !important; }
-            #monthly-report-box { border: 2px solid #000 !important; background: white !important; color: black !important; }
-            #monthly-report-box * { color: black !important; }
+            #monthly-report-box, #daily-report-section { border: 2px solid #000 !important; background: white !important; color: black !important; }
+            #monthly-report-box *, #daily-report-section * { color: black !important; }
             table th { background: #eee !important; color: black !important; border: 1px solid #000; }
             table td { border: 1px solid #ccc; }
+            .student-report-card { background: white !important; border: 1px solid #000 !important; box-shadow: none !important; }
+            .student-report-header { background: #eee !important; border-bottom: 1px solid #000 !important; }
         }
     </style>
 </head>
 <body>
-
-    <!-- الواجهة الرئيسية -->
     <div id="home-page" class="page active">
         <div class="hero-container">
             <div class="hero-card">
@@ -480,11 +474,9 @@
                 <div class="school-badge"><i class="fa-solid fa-bookmark"></i> مدرسة الشيخ سالم الصائغي</div>
                 <h1>منصة رصد الغياب الذكية</h1>
                 <p>نظام إلكتروني متطور لتتبع حضور وغياب الطلاب بكل مرونة، مع دعم الصفوف المتنقلة والربط التلقائي، ومزامنة فورية كاملة.</p>
-                
                 <div class="school-info-box">
                     <div class="info-pill"><i class="fa-solid fa-user-tie"></i> مدير المدرسة: <span>الأستاذ يونس الحجري</span></div>
                 </div>
-
                 <div class="hero-buttons">
                     <button class="btn" onclick="showPage('teacher-page')">
                         <i class="fa-solid fa-chalkboard-user"></i> بوابة المعلمين
@@ -493,27 +485,22 @@
                         <i class="fa-solid fa-shield-halved"></i> لوحة الإدارة
                     </button>
                 </div>
-
                 <div class="developer-credit">
                     <i class="fa-solid fa-code"></i> تطوير وبرمجة: <span>الأستاذ منير الصالحي</span>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- تسجيل دخول الإدارة -->
     <div id="login-page" class="page">
         <div class="login-wrapper">
             <div class="login-card">
                 <a href="#" class="back-link" onclick="showPage('home-page')"><i class="fa-solid fa-arrow-right"></i> عودة للرئيسية</a>
                 <h2 style="border:none; margin-bottom: 8px; padding:0; font-size:1.3rem;">تسجيل الإدارة</h2>
                 <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px;">مرحباً بك أستاذ يونس. أدخل الرقم السري للوصول للوحة التحكم</p>
-                
                 <div class="input-group">
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" id="admin-pass" class="input-field" placeholder="أدخل الرقم السري">
                 </div>
-                
                 <button class="btn" style="width: 100%; justify-content: center;" onclick="checkAdminLogin()">
                     <i class="fa-solid fa-right-to-bracket"></i> دخول للنظام
                 </button>
@@ -523,14 +510,10 @@
             </div>
         </div>
     </div>
-
-    <!-- لوحة تحكم الإدارة -->
     <div id="admin-dashboard" class="page">
         <div class="container">
             <a href="#" class="back-link" onclick="logoutAdmin()"><i class="fa-solid fa-arrow-right"></i> تسجيل الخروج</a>
             <h2><i class="fa-solid fa-sliders" style="color: var(--secondary);"></i> لوحة إدارة المدرسة - الأستاذ يونس الحجري</h2>
-            
-            <!-- قسم إدارة المعلمين -->
             <div class="admin-section">
                 <h3><i class="fa-solid fa-chalkboard-user" style="color: var(--secondary);"></i> إدارة المعلمين</h3>
                 <div style="display: flex; gap: 12px; align-items: flex-end; margin-bottom: 15px; flex-wrap: wrap;">
@@ -544,7 +527,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div style="background: rgba(15, 23, 42, 0.6); padding: 14px; border-radius: var(--radius-md); border: 1px solid var(--border-glass); margin-bottom: 15px;">
                     <label style="display:block; margin-bottom:5px; font-weight:600; font-size:0.85rem; color: var(--accent);">
                         <i class="fa-solid fa-users"></i> إدخال المعلمين دفعة واحدة (كل معلم في سطر مستقل):
@@ -554,7 +536,6 @@
                         <i class="fa-solid fa-file-arrow-down"></i> حفظ وإضافة دفعة المعلمين
                     </button>
                 </div>
-
                 <div class="table-responsive" style="max-height: 180px;">
                     <table>
                         <thead>
@@ -569,8 +550,6 @@
                     </table>
                 </div>
             </div>
-
-            <!-- التقرير الشهري (يعرض الغائبين فقط) -->
             <div class="admin-section" id="monthly-report-box">
                 <h3><i class="fa-solid fa-file-lines" style="color: var(--accent);"></i> التقرير الشهري لحالات الغياب (للطلاب الغائبين فقط)</h3>
                 <div style="display: grid; grid-template-columns: 1fr; gap: 12px; align-items: flex-end; margin-bottom: 15px;">
@@ -588,7 +567,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 15px;">
                     <div style="background: rgba(15, 23, 42, 0.6); padding: 12px; border-radius: 10px; border: 1px solid var(--border-glass); text-align:center;">
                         <div style="color: var(--text-muted); font-size: 0.8rem;">إجمالي حالات الغياب بالشهر</div>
@@ -599,7 +577,6 @@
                         <div style="font-size: 1.3rem; font-weight: bold; color: var(--accent);" id="rep-total-late">0 حالات</div>
                     </div>
                 </div>
-
                 <div class="table-responsive">
                     <table>
                         <thead>
@@ -607,18 +584,17 @@
                                 <th>رقم الطالب</th>
                                 <th>اسم الطالب</th>
                                 <th>عدد أيام الغياب</th>
+                                <th>تواريخ أيام الغياب</th>
                                 <th>عدد أيام التأخير</th>
-                                <th>حالة المتابعة</th>
+                                <th>إجراءات / تنبيهات اللائحة</th>
                             </tr>
                         </thead>
                         <tbody id="monthly-report-tbody">
-                            <tr><td colspan="5" style="color: var(--text-muted);">اختر الشهر والصف لعرض الغائبين</td></tr>
+                            <tr><td colspan="6" style="color: var(--text-muted);">اختر الشهر والصف لعرض الغائبين</td></tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-
-            <!-- إدخال صف جديد أو مادة متنقلة -->
             <div class="admin-section">
                 <h3><i class="fa-solid fa-users-rectangle"></i> إدخال صف أساسي أو مادة متنقلة</h3>
                 <div style="display: flex; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
@@ -642,8 +618,6 @@
                     <i class="fa-solid fa-file-arrow-down"></i> حفظ وإضافة الصف/المادة المتنقلة للنظام
                 </button>
             </div>
-
-            <!-- إدارة الصفوف والطلاب -->
             <div class="admin-section">
                 <h3><i class="fa-solid fa-pen-to-square"></i> إدارة الصفوف والطلاب (حذف أو تعديل)</h3>
                 <div style="display: flex; gap: 12px; align-items: flex-end; margin-bottom: 15px; flex-wrap: wrap;">
@@ -657,7 +631,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="table-responsive" style="max-height: 250px;">
                     <table>
                         <thead>
@@ -673,20 +646,16 @@
                     </table>
                 </div>
             </div>
-
             <div style="background: rgba(79, 70, 229, 0.1); border: 1px solid rgba(79, 70, 229, 0.3); padding: 15px; border-radius: var(--radius-md); text-align: center;">
                 <h4 style="color: var(--secondary); font-size: 1rem; margin-bottom: 4px;">إجمالي الصفوف والمواد الحالية في المدرسة</h4>
                 <p id="total-grades-count" style="font-size: 1.5rem; font-weight: bold; color: var(--text-main);">0</p>
             </div>
         </div>
     </div>
-
-    <!-- صفحة المعلمين -->
     <div id="teacher-page" class="page">
         <div class="container">
             <a href="#" class="back-link" onclick="showPage('home-page')"><i class="fa-solid fa-arrow-right"></i> عودة للرئيسية</a>
             <h2><i class="fa-solid fa-user-pen" style="color: var(--secondary);"></i> بوابة المعلمين - مدرسة الشيخ سالم الصائغي</h2>
-            
             <div class="filters">
                 <div>
                     <label><i class="fa-solid fa-chalkboard-user"></i> اسم المعلم (اكتب أي جزء من الاسم للبحث):</label>
@@ -698,7 +667,7 @@
                 </div>
                 <div>
                     <label><i class="fa-solid fa-calendar-days"></i> تاريخ اليوم الدراسي:</label>
-                    <input type="date" id="attendance-date" class="input-field" onchange="checkExistingRecordAndLoad(); loadTeacherDailyReport();">
+                    <input type="date" id="attendance-date" class="input-field" onchange="onDateChanged(); checkExistingRecordAndLoad(); loadTeacherDailyReport();">
                 </div>
                 <div>
                     <label>اليوم الدراسي:</label>
@@ -728,12 +697,9 @@
                     <select id="grade-select" class="input-field" onchange="checkExistingRecordAndLoad()"></select>
                 </div>
             </div>
-
-            <!-- تنبيه حالة القفل في حال تم الحفظ مسبقاً -->
             <div id="lock-notice-box" style="display: none; background: rgba(239, 68, 68, 0.15); border: 1px solid var(--danger); padding: 12px; border-radius: var(--radius-md); margin-bottom: 15px; text-align: center; color: #fca5a5; font-weight: bold;">
                 <i class="fa-solid fa-lock"></i> تم حفظ رصد هذه الحصة مسبقاً ولا يمكن تعديلها من قبل المعلم. (للتعديل يرجى مراجعة الإدارة).
             </div>
-
             <div id="action-buttons-box" style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 15px;">
                 <button class="btn btn-success" onclick="markAllPresent()" style="flex: 1; min-width: 200px; justify-content: center;">
                     <i class="fa-solid fa-circle-check"></i> لا يوجد غائب بالحصة (إثبات حضور الجميع)
@@ -742,7 +708,6 @@
                     <i class="fa-solid fa-floppy-disk"></i> حفظ رصد الحصة وقفل التعديل النهائي
                 </button>
             </div>
-
             <div class="table-responsive" style="margin-bottom: 30px;">
                 <table>
                     <thead>
@@ -758,11 +723,13 @@
                     </tbody>
                 </table>
             </div>
-
-            <!-- التقرير اليومي المخصص (حسب الصف الأساسي والتاريخ المختار) -->
-            <div class="admin-section" style="background: rgba(15, 23, 42, 0.6);">
-                <h3><i class="fa-solid fa-clock-rotate-left" style="color: var(--secondary);"></i> التقرير اليومي للغائبين والمتأخرين (حسب الصف الأساسي)</h3>
-                
+            <div class="admin-section" id="daily-report-section" style="background: rgba(15, 23, 42, 0.6);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
+                    <h3><i class="fa-solid fa-clock-rotate-left" style="color: var(--secondary);"></i> التقرير اليومي للغائبين والمتأخرين (مجمع حسب الطالب)</h3>
+                    <button class="btn btn-success btn-sm" onclick="window.print()">
+                        <i class="fa-solid fa-print"></i> طباعة التقرير اليومي
+                    </button>
+                </div>
                 <div style="display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 15px;">
                     <div>
                         <label style="display:block; margin-bottom:5px; font-weight:600; font-size:0.85rem; color:var(--text-muted);">اختر الصف الأساسي لعرض تقريره اليومي:</label>
@@ -771,35 +738,15 @@
                         </select>
                     </div>
                 </div>
-
-                <div class="table-responsive">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>التاريخ</th>
-                                <th>الحصة الدراسية</th>
-                                <th>المعلم / المادة</th>
-                                <th>رقم الطالب</th>
-                                <th>اسم الطالب</th>
-                                <th>الحالة</th>
-                                <th>ملاحظات</th>
-                            </tr>
-                        </thead>
-                        <tbody id="teacher-daily-report-tbody">
-                            <tr><td colspan="7" style="color: var(--text-muted);">اختر الصف والتاريخ لعرض الغائبين</td></tr>
-                        </tbody>
-                    </table>
+                <div id="teacher-daily-report-container">
+                    <div style="color: var(--text-muted); text-align: center; padding: 20px;">اختر الصف والتاريخ لعرض الغائبين</div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- كود ربط وإدارة العمليات اللحظية بـ Firebase -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getFirestore, collection, doc, setDoc, addDoc, deleteDoc, onSnapshot, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-
-        // === إعدادات مشروعك السحابي المرتبط بقاعدة البيانات ===
         const firebaseConfig = {
             apiKey: "AIzaSyAhTXXh_FrERbud_IOEcMxfagxpn81f700",
             authDomain: "absence-9fbdf.firebaseapp.com",
@@ -809,27 +756,19 @@
             appId: "1:683827757979:web:4f964b572791d3fa94573e",
             measurementId: "G-X3XKYH6T02"
         };
-
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
-
         window.appData = {
             teachers: [],
             grades: {},
             attendanceRecords: []
         };
-
         document.addEventListener("DOMContentLoaded", () => {
-            const today = new Date().toISOString().split('T')[0];
-            const dateInput = document.getElementById("attendance-date");
-            if(dateInput) dateInput.value = today;
-            
+            updateRealtimeDateAndDay();
+            const todayMonth = new Date().toISOString().split('T')[0].substring(0, 7);
             const monthInput = document.getElementById("report-month-input");
-            if(monthInput) monthInput.value = today.substring(0, 7);
-
+            if(monthInput) monthInput.value = todayMonth;
             initRealtimeSync();
-
-            // إغلاق قائمة البحث عند النقر خارجها
             document.addEventListener("click", (e) => {
                 if(!e.target.closest('.autocomplete-container')) {
                     const dd = document.getElementById("teacher-dropdown-list");
@@ -837,19 +776,49 @@
                 }
             });
         });
-
+        function updateRealtimeDateAndDay() {
+            const dateInput = document.getElementById("attendance-date");
+            const daySelect = document.getElementById("day-select");
+            if(!dateInput || !daySelect) return;
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const dayNum = String(now.getDate()).padStart(2, '0');
+            const currentDateStr = `${year}-${month}-${dayNum}`;
+            dateInput.value = currentDateStr;
+            const daysMap = ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+            const currentDayName = daysMap[now.getDay()];
+            if(currentDayName === "الجمعة" || currentDayName === "السبت") {
+                daySelect.value = "الأحد";
+            } else {
+                daySelect.value = currentDayName;
+            }
+        }
+        window.onDateChanged = function() {
+            const dateInput = document.getElementById("attendance-date");
+            const daySelect = document.getElementById("day-select");
+            if(!dateInput || !daySelect) return;
+            const selectedDate = new Date(dateInput.value);
+            if(!isNaN(selectedDate.getTime())) {
+                const daysMap = ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+                const dayName = daysMap[selectedDate.getDay()];
+                if(dayName !== "الجمعة" && dayName !== "السبت") {
+                    daySelect.value = dayName;
+                }
+            }
+        }
         window.showPage = function(pageId) {
             document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
             document.getElementById(pageId).classList.add('active');
             if(pageId === 'teacher-page') {
+                updateRealtimeDateAndDay();
                 loadTeacherDailyReport();
+                checkExistingRecordAndLoad();
             }
         }
-
         window.goToAdmin = function() {
             showPage('login-page');
         }
-
         window.checkAdminLogin = function() {
             const pass = document.getElementById("admin-pass").value;
             if(pass === "Muneer11") {
@@ -860,11 +829,9 @@
                 document.getElementById("error-msg").style.display = "block";
             }
         }
-
         window.logoutAdmin = function() {
             showPage('home-page');
         }
-
         function initRealtimeSync() {
             onSnapshot(collection(db, "teachers"), (snapshot) => {
                 window.appData.teachers = [];
@@ -873,7 +840,6 @@
                 });
                 updateTeachersTable();
             });
-
             onSnapshot(collection(db, "grades"), (snapshot) => {
                 window.appData.grades = {};
                 snapshot.forEach(docSnap => {
@@ -885,7 +851,6 @@
                     window.loadAdminStudentsTable();
                 }
             });
-
             onSnapshot(collection(db, "attendance"), (snapshot) => {
                 window.appData.attendanceRecords = [];
                 snapshot.forEach(docSnap => {
@@ -900,26 +865,20 @@
                 }
             });
         }
-
-        // فلترة أسماء المعلمين بناءً على أي حرف يتم كتابته
         window.filterTeachersList = function() {
             const input = document.getElementById("teacher-search-input").value.trim().toLowerCase();
             const dropdown = document.getElementById("teacher-dropdown-list");
-            
             if(!input) {
                 dropdown.style.display = "none";
                 document.getElementById("selected-teacher-hidden").value = "";
                 return;
             }
-
             const filtered = window.appData.teachers.filter(t => t.name.toLowerCase().includes(input));
-            
             if(filtered.length === 0) {
                 dropdown.innerHTML = `<div class="autocomplete-item" style="color:var(--text-muted);">لا يوجد معلم بهذا الاسم</div>`;
                 dropdown.style.display = "block";
                 return;
             }
-
             let html = "";
             filtered.forEach(t => {
                 html += `<div class="autocomplete-item" onclick="selectTeacher('${t.name}')">${t.name}</div>`;
@@ -927,13 +886,11 @@
             dropdown.innerHTML = html;
             dropdown.style.display = "block";
         }
-
         window.selectTeacher = function(name) {
             document.getElementById("teacher-search-input").value = name;
             document.getElementById("selected-teacher-hidden").value = name;
             document.getElementById("teacher-dropdown-list").style.display = "none";
         }
-
         function updateTeachersTable() {
             const tbody = document.getElementById("admin-teachers-tbody");
             if(!tbody) return;
@@ -951,7 +908,6 @@
                 `;
             });
         }
-
         window.addNewTeacher = async function() {
             const nameInput = document.getElementById("new-teacher-name");
             const name = nameInput.value.trim();
@@ -959,7 +915,6 @@
             await addDoc(collection(db, "teachers"), { name });
             nameInput.value = "";
         }
-
         window.addBatchTeachers = async function() {
             const text = document.getElementById("batch-teachers-text").value.trim();
             if(!text) return alert("الرجاء إدخال أسماء المعلمين");
@@ -972,21 +927,17 @@
             document.getElementById("batch-teachers-text").value = "";
             alert("تم إضافة المعلمين بنجاح وتحديثهم لدى جميع الزوار!");
         }
-
         window.deleteTeacher = async function(id) {
             if(confirm("هل أنت متأكد من حذف هذا المعلم؟")) {
                 await deleteDoc(doc(db, "teachers", id));
             }
         }
-
         function updateGradesDropdowns() {
             const gradeSelect = document.getElementById("grade-select");
             const adminGradeSelect = document.getElementById("admin-grade-select");
             const monthlyGradeSelect = document.getElementById("monthly-grade-select");
             const reportDailyGradeSelect = document.getElementById("report-daily-grade-select");
-
             const allGradeNames = Object.keys(window.appData.grades);
-            
             if(gradeSelect) {
                 const currentVal = gradeSelect.value;
                 gradeSelect.innerHTML = `<option value="">-- اختر الصف أو المادة المتنقلة --</option>`;
@@ -996,7 +947,6 @@
                 });
                 if(allGradeNames.includes(currentVal)) gradeSelect.value = currentVal;
             }
-
             if(adminGradeSelect) {
                 const currentVal = adminGradeSelect.value;
                 adminGradeSelect.innerHTML = `<option value="">-- اختر الصف أو المادة --</option>`;
@@ -1005,9 +955,7 @@
                 });
                 if(allGradeNames.includes(currentVal)) adminGradeSelect.value = currentVal;
             }
-
             const basicGrades = allGradeNames.filter(g => window.appData.grades[g].type === 'basic' || !window.appData.grades[g].type);
-
             [monthlyGradeSelect, reportDailyGradeSelect].forEach(dd => {
                 if(!dd) return;
                 const currentVal = dd.value;
@@ -1018,18 +966,15 @@
                 if(basicGrades.includes(currentVal)) dd.value = currentVal;
             });
         }
-
         function updateTotalGradesCount() {
             const countEl = document.getElementById("total-grades-count");
             if(countEl) countEl.innerText = Object.keys(window.appData.grades).length;
         }
-
         window.addBatchStudentsToSystem = async function() {
             const gradeName = document.getElementById("batch-grade-name").value.trim();
             const gradeType = document.getElementById("grade-type-select").value;
             const studentsText = document.getElementById("batch-students-text").value.trim();
             if(!gradeName || !studentsText) return alert("الرجاء إدخال اسم الصف وقائمة الطلاب");
-
             let students = [];
             const lines = studentsText.split("\n");
             lines.forEach(line => {
@@ -1038,15 +983,12 @@
                     students.push({ id: parts[0].trim(), name: parts[1].trim() });
                 }
             });
-
             if(students.length === 0) return alert("تأكد من صيغة إدخال الطلاب (رقم - اسم)");
-
             await setDoc(doc(db, "grades", gradeName), { type: gradeType, students });
             document.getElementById("batch-grade-name").value = "";
             document.getElementById("batch-students-text").value = "";
             alert("تم حفظ الصف/المادة والطلاب وتحديثهم للجميع فوراً!");
         }
-
         window.loadAdminStudentsTable = function() {
             const grade = document.getElementById("admin-grade-select").value;
             const tbody = document.getElementById("admin-students-tbody");
@@ -1061,287 +1003,312 @@
                     <tr>
                         <td>${st.id}</td>
                         <td>${st.name}</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="deleteStudent('${grade}', ${idx})"><i class="fa-solid fa-trash"></i> حذف</button></td>
+                        <td><button class="btn btn-danger btn-sm" onclick="deleteStudentFromGrade('${grade}', ${idx})"><i class="fa-solid fa-trash"></i> حذف الطالب</button></td>
                     </tr>
                 `;
             });
         }
-
-        window.deleteStudent = async function(grade, idx) {
-            if(confirm("هل تريد حذف هذا الطالب؟")) {
-                let gradeObj = window.appData.grades[grade];
-                let students = [...gradeObj.students];
-                students.splice(idx, 1);
-                await setDoc(doc(db, "grades", grade), { type: gradeObj.type || 'basic', students });
+        window.deleteStudentFromGrade = async function(gradeName, index) {
+            if(confirm("هل أنت متأكد من حذف هذا الطالب؟")) {
+                let gradeData = window.appData.grades[gradeName];
+                gradeData.students.splice(index, 1);
+                await setDoc(doc(db, "grades", gradeName), gradeData);
                 loadAdminStudentsTable();
             }
         }
-
         window.deleteSelectedGrade = async function() {
             const grade = document.getElementById("admin-grade-select").value;
-            if(!grade) return alert("الرجاء اختيار الصف المراد حذفه");
-            if(confirm(`هل أنت متأكد من حذف الصف "${grade}" بالكامل؟`)) {
+            if(!grade) return alert("الرجاء اختيار صف أولاً");
+            if(confirm(`هل أنت متأكد من حذف الصف "${grade}" بالكامل من النظام؟`)) {
                 await deleteDoc(doc(db, "grades", grade));
+                document.getElementById("admin-grade-select").value = "";
+                document.getElementById("admin-students-tbody").innerHTML = `<tr><td colspan="3" style="color: var(--text-muted);">اختر صفاً لعرض طلابه</td></tr>`;
+                alert("تم حذف الصف بنجاح.");
             }
         }
-
-        // فحص ما إذا تم حفظ الحصة مسبقاً لتعطيل التعديل أو إظهار السجل المحفوظ
         window.checkExistingRecordAndLoad = function() {
             const date = document.getElementById("attendance-date").value;
             const period = document.getElementById("class-period").value;
             const grade = document.getElementById("grade-select").value;
             const tbody = document.getElementById("students-table-body");
-            const lockBox = document.getElementById("lock-notice-box");
-            const actionBox = document.getElementById("action-buttons-box");
-
+            const lockNotice = document.getElementById("lock-notice-box");
+            const actionButtons = document.getElementById("action-buttons-box");
             if(!grade || !window.appData.grades[grade]) {
                 tbody.innerHTML = `<tr><td colspan="4" style="color: var(--text-muted);">اختر الصف لعرض الطلاب</td></tr>`;
-                if(lockBox) lockBox.style.display = "none";
-                if(actionBox) actionBox.style.display = "flex";
+                if(lockNotice) lockNotice.style.display = "none";
+                if(actionButtons) actionButtons.style.display = "flex";
                 return;
             }
-
-            const recordId = `${date}_${grade}_${period}`.replace(/\s+/g, '_');
-            const existingRecord = window.appData.attendanceRecords.find(r => r.id === recordId);
             const students = window.appData.grades[grade].students || [];
-
-            tbody.innerHTML = "";
-
+            const existingRecord = window.appData.attendanceRecords.find(r => r.date === date && r.period === period && r.grade === grade);
             if(existingRecord) {
-                // الحصة مسجلة مسبقاً -> قفل التعديل وعرض النتائج فقط
-                if(lockBox) lockBox.style.display = "block";
-                if(actionBox) actionBox.style.display = "none";
-
+                if(lockNotice) lockNotice.style.display = "block";
+                if(actionButtons) actionButtons.style.display = "none";
+                tbody.innerHTML = "";
                 students.forEach(st => {
-                    const foundRec = (existingRecord.records || []).find(r => r.studentId === st.id);
-                    const status = foundRec ? foundRec.status : "حاضر";
-                    const note = foundRec ? foundRec.note : "";
-                    const badgeColor = status === "غائب" ? "var(--danger)" : (status === "متأخر" ? "var(--accent)" : "var(--success)");
-
+                    const recordSt = existingRecord.studentsStatus ? existingRecord.studentsStatus.find(s => s.id === st.id) : null;
+                    const finalStatus = recordSt ? recordSt.status : 'حاضر';
+                    const finalNote = recordSt ? recordSt.note : '';
+                    let statusColor = finalStatus === 'حاضر' ? 'var(--success)' : (finalStatus === 'غائب' ? 'var(--danger)' : 'var(--accent)');
                     tbody.innerHTML += `
                         <tr>
                             <td>${st.id}</td>
                             <td>${st.name}</td>
-                            <td><span style="color: ${badgeColor}; font-weight:bold;">${status}</span></td>
-                            <td style="color: var(--text-muted);">${note || '-'}</td>
+                            <td><span style="color: ${statusColor}; font-weight: bold;"><i class="fa-solid fa-circle" style="font-size:0.5rem;"></i> ${finalStatus}</span></td>
+                            <td>${finalNote || '-'}</td>
                         </tr>
                     `;
                 });
             } else {
-                // الحصة لم تسجل بعد -> فتح خيارات الرصد
-                if(lockBox) lockBox.style.display = "none";
-                if(actionBox) actionBox.style.display = "flex";
-
+                if(lockNotice) lockNotice.style.display = "none";
+                if(actionButtons) actionButtons.style.display = "flex";
+                tbody.innerHTML = "";
                 students.forEach(st => {
                     tbody.innerHTML += `
-                        <tr>
+                        <tr data-student-id="${st.id}">
                             <td>${st.id}</td>
                             <td>${st.name}</td>
                             <td>
-                                <select class="status-select" data-id="${st.id}">
-                                    <option value="حاضر">حاضر</option>
-                                    <option value="غائب">غائب</option>
-                                    <option value="متأخر">متأخر</option>
+                                <select class="status-select" style="background: rgba(16, 185, 129, 0.2); color: var(--success); border-color: rgba(16, 185, 129, 0.4);" onchange="updateStatusColor(this)">
+                                    <option value="حاضر" style="color:#000;">حاضر</option>
+                                    <option value="غائب" style="color:#000;">غائب</option>
+                                    <option value="متأخر" style="color:#000;">متأخر</option>
                                 </select>
                             </td>
-                            <td><input type="text" class="input-field" data-note="${st.id}" placeholder="ملاحظة أو عذر" style="padding:6px 10px;"></td>
+                            <td>
+                                <input type="text" class="input-field" placeholder="سبب الغياب / عذر التأخير..." style="padding: 6px 10px; font-size: 0.85rem;">
+                            </td>
                         </tr>
                     `;
                 });
             }
         }
-
-        window.markAllPresent = function() {
-            document.querySelectorAll(".status-select").forEach(sel => sel.value = "حاضر");
+        window.updateStatusColor = function(select) {
+            const val = select.value;
+            if(val === 'حاضر') {
+                select.style.background = "rgba(16, 185, 129, 0.2)";
+                select.style.color = "var(--success)";
+                select.style.borderColor = "rgba(16, 185, 129, 0.4)";
+            } else if(val === 'غائب') {
+                select.style.background = "rgba(239, 68, 68, 0.2)";
+                select.style.color = "var(--danger)";
+                select.style.borderColor = "rgba(239, 68, 68, 0.4)";
+            } else {
+                select.style.background = "rgba(245, 158, 11, 0.2)";
+                select.style.color = "var(--accent)";
+                select.style.borderColor = "rgba(245, 158, 11, 0.4)";
+            }
         }
-
-        window.saveAttendance = async function() {
-            const teacher = document.getElementById("selected-teacher-hidden").value || document.getElementById("teacher-search-input").value.trim();
-            const date = document.getElementById("attendance-date").value;
-            const period = document.getElementById("class-period").value;
-            const selectedGroup = document.getElementById("grade-select").value;
-
-            if(!teacher) return alert("الرجاء اختيار أو كتابة اسم المعلم الصحيح");
-            if(!selectedGroup) return alert("الرجاء اختيار الصف أو المادة المتنقلة");
-
+        window.markAllPresent = function() {
             const rows = document.querySelectorAll("#students-table-body tr");
-            let attendanceRecords = [];
-
             rows.forEach(row => {
                 const select = row.querySelector(".status-select");
-                const noteInput = row.querySelector("input[type='text']");
                 if(select) {
-                    attendanceRecords.push({
-                        studentId: select.getAttribute("data-id"),
-                        status: select.value,
-                        note: noteInput ? noteInput.value : ""
-                    });
+                    select.value = "حاضر";
+                    updateStatusColor(select);
                 }
             });
-
-            function findStudentBasicGrade(studentId) {
-                let foundGrade = selectedGroup;
-                for (let gName in window.appData.grades) {
-                    let gData = window.appData.grades[gName];
-                    if ((gData.type === 'basic' || !gData.type) && gData.students) {
-                        if (gData.students.some(s => s.id === studentId)) {
-                            return gName;
-                        }
-                    }
-                }
-                return foundGrade;
-            }
-
-            let mappedAttendanceRecords = attendanceRecords.map(rec => {
-                return {
-                    ...rec,
-                    basicGrade: findStudentBasicGrade(rec.studentId)
-                };
-            });
-
-            const recordId = `${date}_${selectedGroup}_${period}`.replace(/\s+/g, '_');
-            await setDoc(doc(db, "attendance", recordId), {
-                teacher, date, period, grade: selectedGroup, records: mappedAttendanceRecords
-            });
-
-            alert("تم حفظ رصد الحصة بنجاح وإغلاق التعديل عليها نهائياً!");
-            checkExistingRecordAndLoad();
-            loadTeacherDailyReport();
         }
-
-        // التقرير اليومي المخصص
+        window.saveAttendance = async function() {
+            const teacherName = document.getElementById("teacher-search-input").value.trim();
+            if(!teacherName) return alert("الرجاء كتابة أو اختيار اسم المعلم القائم بالرصد");
+            const date = document.getElementById("attendance-date").value;
+            const day = document.getElementById("day-select").value;
+            const period = document.getElementById("class-period").value;
+            const grade = document.getElementById("grade-select").value;
+            if(!grade) return alert("الرجاء اختيار الصف المراد رصده");
+            const rows = document.querySelectorAll("#students-table-body tr");
+            if(rows.length === 0 || rows[0].querySelector("td[colspan]")) {
+                return alert("لا توجد بيانات طلاب للرصد في هذا الصف");
+            }
+            let studentsStatus = [];
+            rows.forEach(row => {
+                const stId = row.getAttribute("data-student-id");
+                if(stId) {
+                    const statusSelect = row.querySelector(".status-select");
+                    const noteInput = row.querySelector("input[type='text']");
+                    const status = statusSelect ? statusSelect.value : 'حاضر';
+                    const note = noteInput ? noteInput.value.trim() : '';
+                    studentsStatus.push({ id: stId, status, note });
+                }
+            });
+            const recordData = {
+                teacherName,
+                date,
+                day,
+                period,
+                grade,
+                studentsStatus,
+                timestamp: Date.now()
+            };
+            try {
+                await addDoc(collection(db, "attendance"), recordData);
+                alert("تم حفظ ورصد الحصة بنجاح وقفل التعديل النهائي!");
+                checkExistingRecordAndLoad();
+                loadTeacherDailyReport();
+            } catch(e) {
+                alert("حدث خطأ أثناء الحفظ: " + e.message);
+            }
+        }
         window.loadTeacherDailyReport = function() {
-            const currentDate = document.getElementById("attendance-date").value;
             const selectedBasicGrade = document.getElementById("report-daily-grade-select").value;
-            const tbody = document.getElementById("teacher-daily-report-tbody");
-            if(!tbody) return;
-
+            const date = document.getElementById("attendance-date").value;
+            const container = document.getElementById("teacher-daily-report-container");
+            if(!container) return;
             if(!selectedBasicGrade) {
-                tbody.innerHTML = `<tr><td colspan="7" style="color: var(--text-muted);">الرجاء اختيار الصف الأساسي لعرض تقريره اليومي</td></tr>`;
+                container.innerHTML = `<div style="color: var(--text-muted); text-align: center; padding: 20px;">اختر الصف الأساسي لعرض التقرير اليومي</div>`;
                 return;
             }
-
-            let html = "";
-            let count = 0;
-
-            window.appData.attendanceRecords.forEach(rec => {
-                if(rec.date === currentDate && rec.records) {
-                    rec.records.forEach(stRec => {
-                        const matchesGrade = (stRec.basicGrade === selectedBasicGrade) || (!stRec.basicGrade && rec.grade === selectedBasicGrade);
-                        
-                        if(matchesGrade && (stRec.status === "غائب" || stRec.status === "متأخر")) {
-                            let studentName = "طالب غير محدد";
-                            for(let g in window.appData.grades) {
-                                let found = (window.appData.grades[g].students || []).find(s => s.id === stRec.studentId);
-                                if(found) {
-                                    studentName = found.name;
-                                    break;
-                                }
+            const records = window.appData.attendanceRecords.filter(r => r.date === date && r.grade === selectedBasicGrade);
+            if(records.length === 0) {
+                container.innerHTML = `<div style="color: var(--text-muted); text-align: center; padding: 20px;">لا توجد حالات غياب أو تأخير مسجلة لهذا الصف في هذا التاريخ</div>`;
+                return;
+            }
+            let studentAbsencesMap = {};
+            records.forEach(rec => {
+                if(rec.studentsStatus && Array.isArray(rec.studentsStatus)) {
+                    rec.studentsStatus.forEach(st => {
+                        if(st.status === 'غائب' || st.status === 'متأخر') {
+                            let stName = st.id;
+                            if(window.appData.grades[rec.grade] && window.appData.grades[rec.grade].students) {
+                                const foundSt = window.appData.grades[rec.grade].students.find(s => s.id === st.id);
+                                if(foundSt) stName = foundSt.name;
                             }
-
-                            const badgeColor = stRec.status === "غائب" ? "var(--danger)" : "var(--accent)";
-                            const teacherSourceInfo = `${rec.teacher} (${rec.grade})`;
-
-                            html += `
-                                <tr>
-                                    <td>${rec.date}</td>
-                                    <td style="font-weight:bold; color:var(--secondary);">${rec.period}</td>
-                                    <td>${teacherSourceInfo}</td>
-                                    <td>${stRec.studentId}</td>
-                                    <td>${studentName}</td>
-                                    <td><span style="color: ${badgeColor}; font-weight:bold;">${stRec.status}</span></td>
-                                    <td>${stRec.note || '-'}</td>
-                                </tr>
-                            `;
-                            count++;
+                            if(!studentAbsencesMap[st.id]) {
+                                studentAbsencesMap[st.id] = {
+                                    id: st.id,
+                                    name: stName,
+                                    periods: []
+                                };
+                            }
+                            studentAbsencesMap[st.id].periods.push({
+                                period: rec.period,
+                                teacherName: rec.teacherName,
+                                status: st.status,
+                                note: st.note || 'بدون عذر'
+                            });
                         }
                     });
                 }
             });
-
-            if(count === 0) {
-                tbody.innerHTML = `<tr><td colspan="7" style="color: var(--text-muted);">لا توجد حالات غياب أو تأخير مسجلة لهذا الصف الأساسي في تاريخ ${currentDate}</td></tr>`;
-            } else {
-                tbody.innerHTML = html;
-            }
-        }
-
-        window.loadMonthlyReport = async function() {
-            const month = document.getElementById("report-month-input").value;
-            const basicGrade = document.getElementById("monthly-grade-select").value;
-            const tbody = document.getElementById("monthly-report-tbody");
-            
-            if(!month || !basicGrade || !window.appData.grades[basicGrade]) {
-                if(tbody) tbody.innerHTML = `<tr><td colspan="5">الرجاء اختيار الشهر والصف الأساسي بدقة</td></tr>`;
+            const absenteeStudents = Object.values(studentAbsencesMap);
+            if(absenteeStudents.length === 0) {
+                container.innerHTML = `<div style="color: var(--success); text-align: center; padding: 20px; font-weight: bold;">جميع طلاب الصف حاضرون في هذا التاريخ!</div>`;
                 return;
             }
-
-            const students = window.appData.grades[basicGrade].students || [];
-            const querySnapshot = await getDocs(collection(db, "attendance"));
-
+            let html = "";
+            absenteeStudents.forEach(student => {
+                html += `
+                    <div class="student-report-card">
+                        <div class="student-report-header">
+                            <div class="student-title">
+                                <i class="fa-solid fa-user-graduate"></i> ${student.name}
+                            </div>
+                            <div class="student-meta">
+                                رقم الطالب: <span style="color: var(--secondary); font-weight: bold;">${student.id}</span> | إجمالي الحالات: <span style="color: var(--accent); font-weight: bold;">${student.periods.length}</span>
+                            </div>
+                        </div>
+                        <div class="student-report-body">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>الحصة الدراسية</th>
+                                            <th>المعلم / المسؤول</th>
+                                            <th>الحالة</th>
+                                            <th>العذر / الملاحظات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                `;
+                student.periods.forEach(p => {
+                    let badgeColor = p.status === 'غائب' ? 'var(--danger)' : 'var(--accent)';
+                    html += `
+                        <tr>
+                            <td><i class="fa-solid fa-clock"></i> ${p.period}</td>
+                            <td>${p.teacherName}</td>
+                            <td><span style="color: ${badgeColor}; font-weight: bold;">${p.status}</span></td>
+                            <td>${p.note}</td>
+                        </tr>
+                    `;
+                });
+                html += `
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+        window.loadMonthlyReport = function() {
+            const monthVal = document.getElementById("report-month-input").value;
+            const gradeName = document.getElementById("monthly-grade-select").value;
+            const tbody = document.getElementById("monthly-report-tbody");
+            const totalAbsEl = document.getElementById("rep-total-absence");
+            const totalLateEl = document.getElementById("rep-total-late");
+            if(!monthVal || !gradeName || !window.appData.grades[gradeName]) {
+                if(tbody) tbody.innerHTML = `<tr><td colspan="6" style="color: var(--text-muted);">اختر الشهر والصف لعرض الغائبين</td></tr>`;
+                return;
+            }
+            const students = window.appData.grades[gradeName].students || [];
+            const monthRecords = window.appData.attendanceRecords.filter(r => r.grade === gradeName && r.date && r.date.startsWith(monthVal));
             let studentStats = {};
             students.forEach(st => {
-                studentStats[st.id] = { name: st.name, absence: 0, late: 0 };
+                studentStats[st.id] = { id: st.id, name: st.name, absenceDates: new Set(), lateCount: 0 };
             });
-
-            let totalAbsenceCount = 0;
-            let totalLateCount = 0;
-
-            querySnapshot.forEach(docSnap => {
-                const data = docSnap.data();
-                if(data.date && data.date.startsWith(month)) {
-                    if(data.records) {
-                        data.records.forEach(rec => {
-                            const matchesGrade = (rec.basicGrade === basicGrade) || (!rec.basicGrade && rec.grade === basicGrade);
-                            if(matchesGrade && studentStats[rec.studentId]) {
-                                if(rec.status === "غائب") {
-                                    studentStats[rec.studentId].absence++;
-                                    totalAbsenceCount++;
-                                }
-                                if(rec.status === "متأخر") {
-                                    studentStats[rec.studentId].late++;
-                                    totalLateCount++;
-                                }
-                            }
-                        });
-                    }
+            monthRecords.forEach(rec => {
+                if(rec.studentsStatus && Array.isArray(rec.studentsStatus)) {
+                    rec.studentsStatus.forEach(st => {
+                        if(studentStats[st.id]) {
+                            if(st.status === 'غائب') studentStats[st.id].absenceDates.add(rec.date);
+                            if(st.status === 'متأخر') studentStats[st.id].lateCount++;
+                        }
+                    });
                 }
             });
-
-            document.getElementById("rep-total-absence").innerText = `${totalAbsenceCount} حالات`;
-            document.getElementById("rep-total-late").innerText = `${totalLateCount} حالات`;
-
-            tbody.innerHTML = "";
-            let absentStudentsFound = 0;
-
-            students.forEach(st => {
-                const stats = studentStats[st.id];
-                if(stats.absence > 0 || stats.late > 0) {
-                    absentStudentsFound++;
-                    let trackingStatus = "منتظم";
-                    let badgeColor = "var(--success)";
-                    if(stats.absence >= 3) {
-                        trackingStatus = "يحتاج متابعة مستمرة";
-                        badgeColor = "var(--danger)";
-                    } else if(stats.absence > 0) {
-                        trackingStatus = "تنبيه غياب";
-                        badgeColor = "var(--accent)";
+            let totalAbsMonth = 0;
+            let totalLateMonth = 0;
+            let html = "";
+            Object.values(studentStats).forEach(st => {
+                const absDatesArr = Array.from(st.absenceDates).sort();
+                const absenceCount = absDatesArr.length;
+                totalAbsMonth += absenceCount;
+                totalLateMonth += st.lateCount;
+                if(absenceCount > 0 || st.lateCount > 0) {
+                    let followUpState = '<span style="color:var(--text-muted);">متابعة عادية</span>';
+                    
+                    if (absenceCount >= 30) {
+                        followUpState = '<span style="color: #ffffff; background-color: #7f1d1d; padding: 4px 8px; border-radius: 6px; font-weight: bold;"><i class="fa-solid fa-ban"></i> الحرمان من دخول الاختبار</span>';
+                    } else if (absenceCount >= 15) {
+                        followUpState = '<span style="color: #ffffff; background-color: #b91c1c; padding: 4px 8px; border-radius: 6px; font-weight: bold;"><i class="fa-solid fa-percent"></i> تخفيض درجات 10%</span>';
+                    } else if (absenceCount >= 10) {
+                        followUpState = '<span style="color: #000000; background-color: #fbbf24; padding: 4px 8px; border-radius: 6px; font-weight: bold;"><i class="fa-solid fa-magnifying-glass-chart"></i> دراسة حالة</span>';
+                    } else if (absenceCount >= 8) {
+                        followUpState = '<span style="color: #ffffff; background-color: #ea580c; padding: 4px 8px; border-radius: 6px; font-weight: bold;"><i class="fa-solid fa-file-contract"></i> إنذار وتعهد الطالب وولي الأمر</span>';
+                    } else if (absenceCount >= 5) {
+                        followUpState = '<span style="color: #000000; background-color: #38bdf8; padding: 4px 8px; border-radius: 6px; font-weight: bold;"><i class="fa-solid fa-bell"></i> تنبيه طالب</span>';
                     }
 
-                    tbody.innerHTML += `
+                    const datesString = absDatesArr.length > 0 ? absDatesArr.join(', ') : '-';
+
+                    html += `
                         <tr>
                             <td>${st.id}</td>
                             <td>${st.name}</td>
-                            <td style="color: var(--danger); font-weight:bold;">${stats.absence}</td>
-                            <td style="color: var(--accent); font-weight:bold;">${stats.late}</td>
-                            <td><span style="color: ${badgeColor}; font-weight:bold;">${trackingStatus}</span></td>
+                            <td><span style="color:var(--danger); font-weight:bold;">${absenceCount} مرات</span></td>
+                            <td style="font-size: 0.85rem; color: var(--secondary); direction: ltr; text-align: center;">${datesString}</td>
+                            <td><span style="color:var(--accent); font-weight:bold;">${st.lateCount} مرات</span></td>
+                            <td>${followUpState}</td>
                         </tr>
                     `;
                 }
             });
-
-            if(absentStudentsFound === 0) {
-                tbody.innerHTML = `<tr><td colspan="5" style="color: var(--success); font-weight:bold;">لا توجد أي حالات غياب أو تأخير مسجلة لهذا الصف خلال هذا الشهر 🎉</td></tr>`;
+            if(totalAbsEl) totalAbsEl.innerText = totalAbsMonth + " حالات";
+            if(totalLateEl) totalLateEl.innerText = totalLateMonth + " حالات";
+            if(tbody) {
+                tbody.innerHTML = html || `<tr><td colspan="6" style="color: var(--success);">لا توجد حالات غياب أو تأخير مسجلة لهذا الصف خلال هذا الشهر</td></tr>`;
             }
         }
     </script>
